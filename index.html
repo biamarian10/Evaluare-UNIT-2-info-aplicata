@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)file:///C:/Users/biama/OneDrive/laborator%207-informatica%20aplicata/Marian_BiancaLudovica.html -->
+<html lang="ro"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marian Bianca Ludovica</title>
+<link  rel="stylesheet" href="style.css">
+   </head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Marian Bianca Ludovica</h1>
+            <p class="contact">
+                <a href="mailto:Marian.Te.Bianca@student.utcluj.ro">Marian.Te.Bianca@student.utcluj.ro</a>
+            </p>
+        </div>
+
+        <h2>Specificații tehnice ale stației principale de lucru</h2>
+        <div class="specs">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Denumire Componentă</th>
+                        <th>Producător</th>
+                        <th>Parametri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Procesor</td>
+                        <td>Intel Core I7-12700H 13th</td>
+                        <td>2300 Mhz, 14 Cores</td>
+                    </tr>
+                    <tr>
+                        <td>Baterie(Sursa)</td>
+                        <td>Asus Battery</td>
+                        <td>42.067 mWh</td>
+                    </tr>
+                    <tr>
+                        <td>Memorie RAM</td>
+                        <td>Asus</td>
+                        <td>16 GB DDR4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Structura rețelei personale și caracteristicile conexiunii la rețea</h2>
+        <div class="network-structure">
+            <div class="structure">
+                <h3>Structura rețelei personale</h3>
+                <ul>
+                   <img src="1.jpg" alt="Diagrama rețelei personale" style="max-width: 500px; height: auto; display: block; margin: 10px auto;">
+                </ul>
+            </div>
+            <div class="connection">
+                <h4>Caracteristicile conexiunii la rețea</h4>
+                <ul>
+                    <li>Adresa MAC: <strong>94-BB-43-0C-6D-D7</strong></li>
+                    <li>Adresa IP: <strong>192.168.1.109</strong></li>
+                    <li>Debit la download: <strong>56.87 Mbps</strong></li>
+                    <li>Debit la upload: <strong>94.36 Mbps</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Utilizarea resurselor (slideshow)</h2>
+        
+        <!-- Slideshow Section -->
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="display: block;">
+                <img src="img1.jpg" alt="Image 1" style="max-width: 500px; height: auto; display: block; margin: 10px auto;">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="img2.jpg" alt="Image 2" style="max-width: 500px; height: auto; display: block; margin: 10px auto;">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="img3.jpg" alt="Image 3" style="max-width: 500px; height: auto; display: block; margin: 10px auto;">
+            </div>
+            <div class="mySlides fade" style="display: none;">
+                <img src="img4.jpg" alt="Image 4" style="max-width: 500px; height: auto; display: block; margin: 10px auto;">
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2024 Marian Bianca Ludovica
+        </div>
+    </div>
+
+    <script>
+        // Slideshow functionality
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+
+
+</body></html>
